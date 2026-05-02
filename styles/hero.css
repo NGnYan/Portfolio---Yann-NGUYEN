@@ -1,0 +1,116 @@
+/* --- Hero --- */
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 65%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Blob orange en arrière-plan */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fed7aa 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Eyebrow */
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Title */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+
+.hero-title span {
+  color: var(--orange);
+}
+
+/* Bio */
+.hero-bio {
+  text-align: justify;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 48px;
+}
+
+/* Buttons */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 1.5px solid var(--dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.hero-btn-primary {
+  background: transparent;
+  color: var(--dark);
+}
+
+.hero-btn-primary:hover {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: var(--dark);
+}
+
+.hero-btn-secondary:hover {
+  background: var(--dark);
+  color: var(--white);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-bio {
+    font-size: 0.9rem;
+  }
+}

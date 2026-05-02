@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Satoshi-bold";
-  src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+  font-family: "Gambetta-bold";
+  src: url("../fonts/Gambetta-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Satoshi-regular";
-  src: url("../fonts/Satoshi-Regular.otf") format("opentype");
+  font-family: "Gambetta-regular";
+  src: url("../fonts/Gambetta-Regular.otf") format("opentype");
 }
 
 /* --- Reset --- */
@@ -29,8 +29,8 @@
   --gray-100: #f5f4f0;
   --white: #ffffff;
 
-  --font-display: "Satoshi-bold", sans-serif;
-  --font-body: "Satoshi-regular", sans-serif;
+  --font-display: "Gambetta-bold", sans-serif;
+  --font-body: "Gambetta-regular", sans-serif;
 
   --transition: 0.2s ease;
 }
@@ -46,4 +46,36 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 32px;
+}
+
+/* --- Scroll reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-grid .card:nth-child(1) {
+  transition:
+    opacity 0.8s ease 0s,
+    transform 0.8s ease 0s;
+}
+
+.projects-grid .card:nth-child(2) {
+  transition:
+    opacity 0.8s ease 0.4s,
+    transform 0.8s ease 0.4s;
+}
+
+.projects-grid .card:nth-child(3) {
+  transition:
+    opacity 0.8s ease 1s,
+    transform 0.8s ease 1s;
 }

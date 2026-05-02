@@ -6,7 +6,11 @@
     <title>Yann NGUYEN — Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
   </head>
+
   <body>
     <!-- Navbar -->
     <header class="navbar">
@@ -21,7 +25,117 @@
       </div>
     </header>
 
-    <!-- Main content -->
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero-eyebrow reveal">
+          Reconversion développeur full stack & IA
+        </p>
+        <h1 class="hero-title reveal">
+          Bonjour,<br />
+          Je suis <span>Yann NGUYEN.</span>
+        </h1>
+        <p class="hero-bio reveal">
+          Enseignant en reconversion vers le développement informatique, je
+          développe un fort intérêt pour l'IA, le code et les technologies. Je
+          souhaite aujourd'hui approfondir mes compétences en entreprise afin
+          d'évoluer vers un poste de développeur full stack spécialisé en
+          intelligence artificielle.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="portfolio.html" class="hero-btn hero-btn-primary"
+            >Voir mes projets</a
+          >
+          <a href="assets/cv.pdf" class="hero-btn hero-btn-secondary" download
+            >Mon CV</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <div class="container">
+        <div class="projects-header reveal">
+          <p class="projects-label">Projets récents</p>
+          <a href="portfolio.html" class="projects-see-all">Voir tout</a>
+        </div>
+        <div class="projects-grid">
+          <a href="projet-hrnet.html" class="card reveal">
+            <div class="card-img">
+              <img src="assets/img/hrnet.png" alt="Aperçu du projet HRnet" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-name">HRnet - WealthHealth</h3>
+              <p class="card-desc">
+                App RH de gestion des employés avec tableau interactif.
+              </p>
+            </div>
+          </a>
+
+          <a href="projet-argentbank.html" class="card reveal">
+            <div class="card-img">
+              <img
+                src="assets/img/argentbank.png"
+                alt="Aperçu du projet ArgentBank"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-name">ArgentBank - Remede Agency</h3>
+              <p class="card-desc">
+                Application bancaire avec authentification et gestion de profil.
+              </p>
+            </div>
+          </a>
+
+          <a href="projet-billed.html" class="card reveal">
+            <div class="card-img">
+              <img src="assets/img/billed.png" alt="Aperçu du projet Billed" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-name">Billed - SaaS RH</h3>
+              <p class="card-desc">
+                Débogage et tests d'une application SaaS de gestion de notes de
+                frais.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-text">
+            <h2 class="contact-title">Travaillons ensemble.</h2>
+            <p class="contact-sub">
+              Disponible pour des opportunités en développement web full stack.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:nguyen.yann.pro@gmail.com" class="contact-btn"
+              >Gmail</a
+            >
+            <a
+              href="https://github.com/NGnYan"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/yann-nguyen-/"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="main.js"></script>
   </body>
