@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Satoshi-bold";
+  src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Satoshi-regular";
+  src: url("../fonts/Satoshi-Regular.otf") format("opentype");
+}
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Variables --- */
+:root {
+  --orange: #f97316;
+  --orange-light: #fed7aa;
+  --orange-pale: #fff7ed;
+  --dark: #1a1a1a;
+  --brown: #3d2c1e;
+  --muted: #9ca3af;
+  --border: #f0ede8;
+  --gray-100: #f5f4f0;
+  --white: #ffffff;
+
+  --font-display: "Satoshi-bold", sans-serif;
+  --font-body: "Satoshi-regular", sans-serif;
+
+  --transition: 0.2s ease;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--dark);
+  background: var(--gray-100);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
