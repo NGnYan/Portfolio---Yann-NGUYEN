@@ -82,6 +82,13 @@
   transform: scale(1.05);
 }
 
+.card-img-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--gray-100);
+  border-bottom: 0.5px solid var(--border);
+}
+
 /* Body */
 .card-body {
   padding: 20px;

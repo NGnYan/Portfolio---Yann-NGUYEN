@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HRnet</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/project-page.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="projet-hero">
+      <img src="../assets/img/hrnet.png" alt="HRnet" class="projet-hero-img" />
+      <a href="index.html" class="projet-back">← Retour</a>
+      <div class="projet-hero-overlay">
+        <h1 class="projet-hero-title">HRnet — WealthHealth</h1>
+        <div class="projet-hero-tags">
+          <span class="projet-hero-tag">React</span>
+          <span class="projet-hero-tag">Redux</span>
+          <span class="projet-hero-tag">npm</span>
+          <span class="projet-hero-tag">Vite</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenu -->
+    <div class="projet-content">
+      <!-- Colonne gauche -->
+      <div class="projet-main">
+        <section class="projet-section reveal">
+          <p class="projet-section-label">Contexte</p>
+          <p class="projet-text">
+            Conversion d'une application RH interne de jQuery vers React pour
+            une grande société financière, WealthHealth. L'objectif était
+            d'améliorer les performances, réduire les bugs et moderniser la
+            stack technique en adoptant un paradigme fonctionnel.
+          </p>
+        </section>
+
+        <section class="projet-section reveal">
+          <p class="projet-section-label">Ce que j'ai appris</p>
+          <div class="projet-learnings">
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Conversion d'une application jQuery en React avec paradigme
+              fonctionnel
+            </div>
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Gestion d'état global avec Redux et création d'un store
+            </div>
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Publication d'un composant sur npm avec documentation README
+            </div>
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Audit de performance Lighthouse avant/après migration
+            </div>
+          </div>
+        </section>
+
+        <section class="projet-section reveal">
+          <p class="projet-section-label">Screenshots</p>
+          <div class="projet-screens">
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/hrnet-screen1.png"
+                alt="HRnet screenshot 1"
+              />
+            </div>
+
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/hrnet-screen2.png"
+                alt="HRnet screenshot 2"
+              />
+            </div>
+
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/hrnet-screen3.png"
+                alt="HRnet screenshot 3"
+              />
+            </div>
+
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/hrnet-screen4.png"
+                alt="HRnet screenshot 4"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar droite -->
+      <aside class="projet-sidebar">
+        <div class="projet-sidebar-card reveal">
+          <p class="projet-sidebar-label">Liens</p>
+          <a
+            href="https://github.com/NGnYan/HRnet"
+            target="_blank"
+            rel="noopener"
+            class="projet-github-btn"
+            >Voir sur GitHub</a
+          >
+        </div>
+
+        <div class="projet-sidebar-card reveal">
+          <p class="projet-sidebar-label">Stack technique</p>
+          <div class="projet-tags">
+            <span class="projet-tag">React</span>
+            <span class="projet-tag">Redux</span>
+            <span class="projet-tag">npm</span>
+            <span class="projet-tag">Vite</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-text">
+            <h2 class="contact-title">Travaillons ensemble.</h2>
+            <p class="contact-sub">
+              Disponible pour des opportunités en développement web full stack.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:nguyen.yann.pro@gmail.com" class="contact-btn"
+              >Gmail</a
+            >
+            <a
+              href="https://github.com/NGnYan"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/yann-nguyen-/"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-overlay"></div>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <button class="lightbox-close" id="lightbox-close">✕</button>
+    </div>
+
+    <script src="../data.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

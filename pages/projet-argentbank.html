@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArgentBank</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/project-page.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="projet-hero">
+      <img
+        src="../assets/img/argentbank.png"
+        alt="ArgentBank"
+        class="projet-hero-img"
+      />
+      <a href="index.html" class="projet-back">← Retour</a>
+      <div class="projet-hero-overlay">
+        <h1 class="projet-hero-title">ArgentBank — Remede Agency</h1>
+        <div class="projet-hero-tags">
+          <span class="projet-hero-tag">React</span>
+          <span class="projet-hero-tag">Redux</span>
+          <span class="projet-hero-tag">REST API</span>
+          <span class="projet-hero-tag">Swagger</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenu -->
+    <div class="projet-content">
+      <!-- Colonne gauche -->
+      <div class="projet-main">
+        <section class="projet-section reveal">
+          <p class="projet-section-label">Contexte</p>
+          <p class="projet-text">
+            Développement front-end d'une application bancaire pour Remede
+            Agency. L'objectif était d'intégrer le front-end avec le back-end
+            via des appels API REST, de créer un tableau de bord utilisateur
+            responsive et de gérer l'authentification avec Redux.
+          </p>
+        </section>
+
+        <section class="projet-section reveal">
+          <p class="projet-section-label">Ce que j'ai appris</p>
+          <div class="projet-learnings">
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Intégration d'une API REST avec React et gestion des appels HTTP
+            </div>
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Gestion de l'authentification et des tokens avec Redux
+            </div>
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Modélisation des routes API avec Swagger
+            </div>
+            <div class="projet-learning-item">
+              <div class="projet-dot"></div>
+              Mise en place d'un tableau de bord utilisateur complet et
+              responsive
+            </div>
+          </div>
+        </section>
+
+        <section class="projet-section reveal">
+          <p class="projet-section-label">Screenshots</p>
+          <div class="projet-screens">
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/argentbank-screen1.png"
+                alt="ArgentBank screenshot 1"
+              />
+            </div>
+
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/argentbank-screen2.png"
+                alt="ArgentBank screenshot 2"
+              />
+            </div>
+
+            <div class="projet-screen">
+              <img
+                src="../assets/img/screens/argentbank-screen3.png"
+                alt="ArgentBank screenshot 3"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="projet-sidebar">
+        <div class="projet-sidebar-card reveal">
+          <p class="projet-sidebar-label">Liens</p>
+          <a
+            href="https://github.com/NGnYan/ArgentBank"
+            target="_blank"
+            rel="noopener"
+            class="projet-github-btn"
+            >Voir sur GitHub</a
+          >
+        </div>
+
+        <div class="projet-sidebar-card reveal">
+          <p class="projet-sidebar-label">Stack technique</p>
+          <div class="projet-tags">
+            <span class="projet-tag">React</span>
+            <span class="projet-tag">Redux</span>
+            <span class="projet-tag">REST API</span>
+            <span class="projet-tag">Swagger</span>
+            <span class="projet-tag">Node.js</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <div class="contact-text">
+            <h2 class="contact-title">Travaillons ensemble.</h2>
+            <p class="contact-sub">
+              Disponible pour des opportunités en développement web full stack.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:nguyen.yann.pro@gmail.com" class="contact-btn"
+              >Gmail</a
+            >
+            <a
+              href="https://github.com/NGnYan"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/yann-nguyen-/"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-overlay"></div>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <button class="lightbox-close" id="lightbox-close">✕</button>
+    </div>
+
+    <script src="../data.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

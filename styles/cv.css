@@ -1,4 +1,5 @@
 /* --- CV Hero --- */
+
 .cv-hero {
   padding: 80px 0;
   background: linear-gradient(135deg, #fff7ed 0%, #ffffff 65%);
@@ -62,13 +63,16 @@
 
 /* --- Sections --- */
 .cv-section {
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   margin: 24px auto;
   max-width: 900px;
   width: 90%;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 40px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
 .cv-section-label {
@@ -230,6 +234,10 @@
     padding: 48px 0;
   }
 
+  .cv-hero::after {
+    opacity: 0.4;
+  }
+
   .cv-name {
     font-size: 2rem;
   }
@@ -241,4 +249,20 @@
   .cv-infos {
     grid-template-columns: 1fr;
   }
+}
+
+.cv-timeline-item:nth-child(1) {
+  transition:
+    opacity 0.6s ease 0s,
+    transform 0.6s ease 0s;
+}
+.cv-timeline-item:nth-child(2) {
+  transition:
+    opacity 0.6s ease 0.1s,
+    transform 0.6s ease 0.1s;
+}
+.cv-timeline-item:nth-child(3) {
+  transition:
+    opacity 0.6s ease 0.2s,
+    transform 0.6s ease 0.2s;
 }
