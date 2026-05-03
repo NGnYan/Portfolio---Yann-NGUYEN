@@ -6,7 +6,7 @@ const projects = [
     desc: "Conversion d'une application RH jQuery en React avec création d'un composant tableau publié sur npm.",
     stack: ["React", "Redux", "npm", "Vite"],
     img: "../assets/img/hrnet.png",
-    link: "projet-hrnet.html",
+    link: "pages/projet-hrnet.html",
     github: "https://github.com/NGnYan/HRnet",
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     desc: "Développement front-end d'une application bancaire avec authentification et gestion d'état via Redux.",
     stack: ["React", "Redux", "REST API", "Swagger"],
     img: "../assets/img/argentbank.png",
-    link: "projet-argentbank.html",
+    link: "pages/projet-argentbank.html",
     github: "https://github.com/NGnYan/ArgentBank",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     desc: "Débogage et tests unitaires, d'intégration et end-to-end d'une application SaaS de notes de frais.",
     stack: ["JavaScript", "Jest", "Chrome Debugger"],
     img: "../assets/img/billed.png",
-    link: "projet-billed.html",
+    link: "pages/projet-billed.html",
     github: "https://github.com/NGnYan/Billed-app",
   },
   {
