@@ -216,6 +216,26 @@
   opacity: 0.8;
 }
 
+.projet-npm-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--orange);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: opacity var(--transition);
+}
+
+.projet-npm-btn:hover {
+  opacity: 0.85;
+}
+
 .projet-tags {
   display: flex;
   flex-wrap: wrap;
