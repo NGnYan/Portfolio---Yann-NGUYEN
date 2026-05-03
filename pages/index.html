@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yann NGUYEN — Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/hero.css" />
-    <link rel="stylesheet" href="styles/projects.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/hero.css" />
+    <link rel="stylesheet" href="../styles/projects.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
   </head>
 
   <body>
@@ -46,7 +46,10 @@
           <a href="portfolio.html" class="hero-btn hero-btn-primary"
             >Voir mes projets</a
           >
-          <a href="assets/cv.pdf" class="hero-btn hero-btn-secondary" download
+          <a
+            href="../assets/CV_Yann_NGUYEN.pdf"
+            class="hero-btn hero-btn-secondary"
+            download
             >Mon CV</a
           >
         </div>
@@ -60,47 +63,7 @@
           <p class="projects-label">Projets récents</p>
           <a href="portfolio.html" class="projects-see-all">Voir tout</a>
         </div>
-        <div class="projects-grid">
-          <a href="projet-hrnet.html" class="card reveal">
-            <div class="card-img">
-              <img src="assets/img/hrnet.png" alt="Aperçu du projet HRnet" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-name">HRnet - WealthHealth</h3>
-              <p class="card-desc">
-                App RH de gestion des employés avec tableau interactif.
-              </p>
-            </div>
-          </a>
-
-          <a href="projet-argentbank.html" class="card reveal">
-            <div class="card-img">
-              <img
-                src="assets/img/argentbank.png"
-                alt="Aperçu du projet ArgentBank"
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-name">ArgentBank - Remede Agency</h3>
-              <p class="card-desc">
-                Application bancaire avec authentification et gestion de profil.
-              </p>
-            </div>
-          </a>
-
-          <a href="projet-billed.html" class="card reveal">
-            <div class="card-img">
-              <img src="assets/img/billed.png" alt="Aperçu du projet Billed" />
-            </div>
-            <div class="card-body">
-              <h3 class="card-name">Billed - SaaS RH</h3>
-              <p class="card-desc">
-                Débogage et tests d'une application SaaS de gestion de notes de
-                frais.
-              </p>
-            </div>
-          </a>
-        </div>
+        <div class="projects-grid" id="projects-grid"></div>
       </div>
     </section>
 
@@ -137,6 +100,7 @@
       </div>
     </section>
 
-    <script src="main.js"></script>
+    <script src="../data.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>

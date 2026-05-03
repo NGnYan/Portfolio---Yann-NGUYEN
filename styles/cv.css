@@ -1,0 +1,244 @@
+/* --- CV Hero --- */
+.cv-hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 65%);
+  border-bottom: 0.5px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-hero::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fed7aa 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cv-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.cv-name {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+
+.cv-name span {
+  color: var(--orange);
+}
+
+.cv-dl-btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--orange);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.cv-dl-btn:hover {
+  opacity: 0.85;
+}
+
+/* --- Sections --- */
+.cv-section {
+  background: var(--white);
+  margin: 24px auto;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid var(--border);
+}
+
+.cv-section-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid var(--orange-light);
+}
+
+/* Intro */
+.cv-intro-text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6b7280;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* --- Timeline --- */
+.cv-timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.cv-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--orange-light);
+}
+
+.cv-timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.cv-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.cv-timeline-dot {
+  position: absolute;
+  left: -29px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: 2px solid var(--orange-pale);
+  box-shadow: 0 0 0 2px var(--orange);
+}
+
+.cv-timeline-date {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.cv-timeline-role {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 2px;
+}
+
+.cv-timeline-org {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.cv-timeline-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* --- Skills --- */
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cv-skills-cat {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cv-tag {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--orange-pale);
+  color: #c2410c;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--orange-light);
+}
+
+/* --- Infos --- */
+.cv-infos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cv-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cv-info-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cv-info-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--dark);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .cv-hero {
+    padding: 48px 0;
+  }
+
+  .cv-name {
+    font-size: 2rem;
+  }
+
+  .cv-section {
+    padding: 24px;
+  }
+
+  .cv-infos {
+    grid-template-columns: 1fr;
+  }
+}

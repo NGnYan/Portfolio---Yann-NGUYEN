@@ -62,20 +62,18 @@ body {
   transform: translateY(0);
 }
 
-.projects-grid .card:nth-child(1) {
+.cv-timeline-item:nth-child(1) {
   transition:
-    opacity 0.8s ease 0s,
-    transform 0.8s ease 0s;
+    opacity 0.6s ease 0s,
+    transform 0.6s ease 0s;
 }
-
-.projects-grid .card:nth-child(2) {
+.cv-timeline-item:nth-child(2) {
   transition:
-    opacity 0.8s ease 0.4s,
-    transform 0.8s ease 0.4s;
+    opacity 0.6s ease 0.3s,
+    transform 0.6s ease 0.1s;
 }
-
-.projects-grid .card:nth-child(3) {
+.cv-timeline-item:nth-child(3) {
   transition:
-    opacity 0.8s ease 1s,
-    transform 0.8s ease 1s;
+    opacity 0.6s ease 0.6s,
+    transform 0.6s ease 0.2s;
 }
